@@ -535,7 +535,7 @@ function buildAll(){
     var topN=z.topN, botStart=z.botStart;
     zones=[
       {label:'Топ — лидеры',    cls:'zt', data:sorted.slice(0,topN)},
-      {label:'Золотая середина', cls:'zm', data:sorted.slice(topN,botStart)},
+      {label:'В Строю', cls:'zm', data:sorted.slice(topN,botStart)},
       {label:'Продолжают путь', cls:'zb', data:sorted.slice(botStart)},
     ];
     zones=zones.filter(function(z){return z.data.length>0;});
