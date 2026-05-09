@@ -632,7 +632,7 @@ function buildAll(){
   var zones;
 
   if(allZero){
-    zones=[{label:'Участники', cls:'zm', data:sorted.slice()}];
+    zones=[{label:'На Старте', cls:'zm', data:sorted.slice()}];
   } else {
     var z=computeZones(sorted);
     var topN=z.topN, botStart=z.botStart;
