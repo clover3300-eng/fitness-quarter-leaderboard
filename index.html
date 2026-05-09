@@ -301,7 +301,7 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
           <div class="comp-item" onclick="pickComp('push',this)"><span>Отжимания</span><span class="comp-item-count"></span></div>
           <div class="comp-item" onclick="pickComp('squat',this)"><span>Приседания</span><span class="comp-item-count"></span></div>
           <div class="comp-item" onclick="pickComp('burpee',this)"><span>Берпи</span><span class="comp-item-count"></span></div>
-          <div class="comp-item" onclick="pickComp('chair',this)"><span>Отжимания от стула</span><span class="comp-item-count"></span></div>
+          <div class="comp-item" onclick="pickComp('chair',this)"><span>Отжимания от Стула</span><span class="comp-item-count"></span></div>
         </div>
       </div>
     </div>
@@ -1056,7 +1056,7 @@ function toggleComp(e){
     btn.classList.add('active');
   }
 }
-var COMP_LABELS={push:'Отжимания',squat:'Приседания',burpee:'Берпи',chair:'От стула'};
+var COMP_LABELS={push:'Отжимания',squat:'Приседания',burpee:'Берпи',chair:'От Стула'};
 function pickComp(id,item){
   document.querySelectorAll('.comp-item').forEach(function(i){i.classList.remove('chosen');});
   item.classList.add('chosen');
